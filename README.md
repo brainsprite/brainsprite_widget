@@ -1,1 +1,1 @@
-# brainsprite_widget
+# Brainsprite.js Widget
