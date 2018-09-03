@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "brainsprite_widget/extension": true
+  }
+}

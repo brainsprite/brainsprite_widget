@@ -1,0 +1,2 @@
+recursive-include brainsprite_widget/static *.*
+include brainsprite_widget.json
