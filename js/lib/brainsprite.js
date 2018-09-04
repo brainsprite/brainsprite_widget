@@ -21,8 +21,10 @@ var BrainSpriteView = widgets.DOMWidgetView.extend({
     },
 
     value_changed: function() {
+        
         var unique_id = this.model.model_id;
-        var elem = this.model.el;
+
+        var elem = this.el;
         var sprite = this.model.get('sprite');
         var tempUrl = URL.createObjectURL(
             new Blob(
@@ -31,7 +33,9 @@ var BrainSpriteView = widgets.DOMWidgetView.extend({
             )
         );
 
-        this.img = jQuery('<img />').attr('src', tempUrl)[0]
+        this.img = jQuery('<img />').attr('src', tempUrl)
+
+        $(elem).append(this.img)
 
         // TODO call brainsprite into elem, using this.img
     }
